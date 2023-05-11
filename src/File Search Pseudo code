@@ -1,0 +1,7 @@
+function findFile(targetFile, currentDirectory):
+    for each file in currentDirectory:
+        if file is a directory:
+            call findFile(targetFile, file)
+        else if file matches targetFile:
+            return file path
+    return "File not found"
